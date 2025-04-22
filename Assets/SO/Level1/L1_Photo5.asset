@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc15004050810f4386d12544cb8db7a, type: 3}
+  m_Name: L1_Photo5
+  m_EditorClassIdentifier: 
+  photoID: 5
+  photoName: Photo5
+  photoSprite: {fileID: 21300000, guid: 17387661a751384429b053795df87f43, type: 3}
+  hintText: This is photo 5
+  levelNumber: 1
