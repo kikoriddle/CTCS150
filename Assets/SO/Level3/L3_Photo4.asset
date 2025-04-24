@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc15004050810f4386d12544cb8db7a, type: 3}
+  m_Name: L3_Photo4
+  m_EditorClassIdentifier: 
+  photoID: 4
+  photoSprite: {fileID: 21300000, guid: 51ed0407f098316499463ff87ce5bd43, type: 3}
+  hintText: "\u201CMy parents kept going on about futures and responsibilities I
+    didn\u2019t want. And all I could hear in my head was Rae and Oliver saying I
+    had it 'easy' all those years ago. Easy? I\u2019d trade places with them in a
+    second.\u201D -Sophia"
+  levelNumber: 3

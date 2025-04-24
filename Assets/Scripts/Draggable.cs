@@ -30,7 +30,10 @@ public class Draggable : MonoBehaviour
     // References
     private SpriteRenderer spriteRenderer;
     private Camera mainCam;
-    
+
+    //sound reference
+    [SerializeField] private AudioClip pickUpSound;
+    [SerializeField] private AudioClip dropSound;
     //bug fix -> only check draggable when finished being drraged
 
 
@@ -54,6 +57,7 @@ public class Draggable : MonoBehaviour
 
         Debug.Log("Begin Dragging");
 
+        GameManager.Instance.PlaySFX(pickUpSound);
         if (isCorrectlyPlaced)
             return; // Prevent dragging if already correctly placed
 
@@ -127,7 +131,9 @@ public class Draggable : MonoBehaviour
 
         // Return to original rotation
         transform.rotation = originalRotation;
-     
+
+        GameManager.Instance.PlaySFX(dropSound);
+
         PhotoManager manager = FindObjectOfType<PhotoManager>();
         if (manager != null)
             manager.HideHint();

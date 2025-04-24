@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc15004050810f4386d12544cb8db7a, type: 3}
+  m_Name: L3_Photo2
+  m_EditorClassIdentifier: 
+  photoID: 2
+  photoSprite: {fileID: 21300000, guid: 513c3b2c72112ae4ca9aa70387dbebf8, type: 3}
+  hintText: "\u201CMom and dad kept saying how it was \u201Cjust a phase.\u201D That
+    I will find the right person one day and understand. They were the ones who didn\u2019t
+    understand.\u201D -Rae"
+  levelNumber: 3

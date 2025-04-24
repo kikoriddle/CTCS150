@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: L1_Photo4
   m_EditorClassIdentifier: 
   photoID: 4
-  photoName: Photo4
-  photoSprite: {fileID: 21300000, guid: 17387661a751384429b053795df87f43, type: 3}
-  hintText: This is photo 4
+  photoSprite: {fileID: 21300000, guid: 632922c713e0e434295d2e7390203c0a, type: 3}
+  hintText: "\u201CAfter all these years of being apart, we still have the same tastes
+    in beverages.\u201D -Rae"
   levelNumber: 1

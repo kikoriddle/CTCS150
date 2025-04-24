@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: L1_Photo1
   m_EditorClassIdentifier: 
   photoID: 1
-  photoName: Photo1
-  photoSprite: {fileID: 21300000, guid: 17387661a751384429b053795df87f43, type: 3}
-  hintText: This is photo 1
+  photoSprite: {fileID: 21300000, guid: 2d04aa4b46846184784e552d40909e93, type: 3}
+  hintText: "\u201CRae and Oliver said that they are going to form a band, and I
+    can be their manager!\u201D -Sophia "
   levelNumber: 1

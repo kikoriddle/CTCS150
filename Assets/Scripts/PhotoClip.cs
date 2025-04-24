@@ -6,6 +6,7 @@ public class PhotoClip : MonoBehaviour
 {
     //the correct photoID
     [SerializeField] private int targetPhotoID;
+    [SerializeField] private AudioClip cardComplete;
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -23,6 +24,9 @@ public class PhotoClip : MonoBehaviour
                 draggable.transform.position = transform.position + new Vector3(0, -1.5f, 0);
 
                 Debug.Log("Correctly placed photo ID: " + droppedID);
+
+                GameManager.Instance.PlaySFX(cardComplete);
+
             }
             else
             {

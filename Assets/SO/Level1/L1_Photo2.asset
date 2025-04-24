@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: L1_Photo2
   m_EditorClassIdentifier: 
   photoID: 2
-  photoName: Photo2
-  photoSprite: {fileID: 21300000, guid: 17387661a751384429b053795df87f43, type: 3}
-  hintText: This is photo 2
+  photoSprite: {fileID: 21300000, guid: ee33de5319451924dac3d65e27dac2f3, type: 3}
+  hintText: "\u201CWe were all so tired, but the laughter never stopped. We were
+    laughing for so long that I couldn\u2019t even remember the joke anymore.\u201D
+    -Rae  "
   levelNumber: 1

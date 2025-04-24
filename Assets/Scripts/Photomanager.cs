@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class PhotoManager : MonoBehaviour
 {
@@ -15,13 +16,18 @@ public class PhotoManager : MonoBehaviour
 
     [Header("UI References")]
     [SerializeField] private TextMeshProUGUI hintText;
-    //[SerializeField] private GameObject levelCompletePanel;
+    [SerializeField] private AudioClip levelComplete;
+
+    public GameObject levelCompletePanel;
 
     private void Start()
     {
         // Hide the hint text initially
         if (hintText != null)
             hintText.gameObject.SetActive(false);
+
+        FindObjectOfType<TransitionController>().StartTransition();
+        
 
         // if (levelCompletePanel != null)
         //   levelCompletePanel.SetActive(false);
@@ -33,9 +39,27 @@ public class PhotoManager : MonoBehaviour
         // Optional: constantly check if all photos are placed
         if (AllPhotosPlacedCorrectly())
         {
-            Debug.Log("LEVEL COMPLETE!");
-           // if (levelCompletePanel != null)
-                //levelCompletePanel.SetActive(true);
+            GameManager.Instance.PlaySFX(levelComplete);
+
+            print(currentLevel.name);
+            if (currentLevel.levelNumber <= 3)
+            {
+                int newNum = currentLevel.levelNumber + 1;
+                string newLevel = "Level" + newNum.ToString();
+                print(newLevel);
+                levelCompletePanel.SetActive(true);
+                FindObjectOfType<TransitionController>().EndTransition(newLevel);
+            }
+            else 
+            {
+                levelCompletePanel.SetActive(true);
+                FindObjectOfType<TransitionController>().EndTransition("Credit");
+            }
+            
+
+            // Debug.Log("LEVEL COMPLETE!");
+            // if (levelCompletePanel != null)
+            //levelCompletePanel.SetActive(true);
         }
     }
 
@@ -47,6 +71,7 @@ public class PhotoManager : MonoBehaviour
                 return false;
         }
         return true;
+        
     }
 
     public void ShowHint(string text)

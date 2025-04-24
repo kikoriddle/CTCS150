@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: L1_Photo3
   m_EditorClassIdentifier: 
   photoID: 3
-  photoName: Photo3
-  photoSprite: {fileID: 21300000, guid: 17387661a751384429b053795df87f43, type: 3}
-  hintText: This is photo 3
+  photoSprite: {fileID: 21300000, guid: e5083da0426c4a446902f6dfa202da27, type: 3}
+  hintText: "\u201CWe\u2019re starting our first year of highschool, and we all can\u2019t
+    wait!\u201D -Oliver"
   levelNumber: 1

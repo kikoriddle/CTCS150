@@ -99,9 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPhotoID: 1
-  lockedPosition: {x: 0, y: 0, z: 0}
-  lockedRotation: {x: 0, y: 0, z: 0}
-  lockedScale: {x: 1, y: 1, z: 1}
+  cardComplete: {fileID: 8300000, guid: 4a6bd4f06d63e504a9e85bfc24089fe8, type: 3}
 --- !u!61 &727837951865508230
 BoxCollider2D:
   m_ObjectHideFlags: 0

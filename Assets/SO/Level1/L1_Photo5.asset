@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: L1_Photo5
   m_EditorClassIdentifier: 
   photoID: 5
-  photoName: Photo5
-  photoSprite: {fileID: 21300000, guid: 17387661a751384429b053795df87f43, type: 3}
-  hintText: This is photo 5
+  photoSprite: {fileID: 21300000, guid: 56f23e8e45b24874998ee0553e529524, type: 3}
+  hintText: "\u201CThey said I looked like a \u201Cgay wizard\u201D and I couldn\u2019t
+    help but laugh. Ended up buying it just to remember this day.\u201D -Sophia"
   levelNumber: 1
