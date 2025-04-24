@@ -19,6 +19,7 @@ public class PhotoManager : MonoBehaviour
     [SerializeField] private AudioClip levelComplete;
 
     public GameObject levelCompletePanel;
+    private bool levelFinished = false;
 
     private void Start()
     {
@@ -37,8 +38,9 @@ public class PhotoManager : MonoBehaviour
     private void Update()
     {
         // Optional: constantly check if all photos are placed
-        if (AllPhotosPlacedCorrectly())
+        if (!levelFinished && AllPhotosPlacedCorrectly())
         {
+            levelFinished = true; // prevents this from running again
             GameManager.Instance.PlaySFX(levelComplete);
 
             print(currentLevel.name);
